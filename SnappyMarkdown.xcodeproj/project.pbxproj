@@ -12,6 +12,42 @@
 		111109762002AEFC0000DBEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111109742002AEFC0000DBEF /* Main.storyboard */; };
 		111109782002AEFC0000DBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111109772002AEFC0000DBEF /* Assets.xcassets */; };
 		1111097B2002AEFC0000DBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111109792002AEFC0000DBEF /* LaunchScreen.storyboard */; };
+		11110AD02002B1410000DBEF /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AA92002B13D0000DBEF /* commonmark.c */; };
+		11110AD12002B1410000DBEF /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AAA2002B13D0000DBEF /* utf8.c */; };
+		11110AD22002B1410000DBEF /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AAB2002B13D0000DBEF /* blocks.c */; };
+		11110AD42002B1410000DBEF /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AB02002B13E0000DBEF /* html.c */; };
+		11110AD52002B1410000DBEF /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AB12002B13E0000DBEF /* scanners.c */; };
+		11110AD62002B1410000DBEF /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AB22002B13E0000DBEF /* buffer.c */; };
+		11110AD72002B1410000DBEF /* config.h in Resources */ = {isa = PBXBuildFile; fileRef = 11110AB32002B13E0000DBEF /* config.h */; };
+		11110AD82002B1410000DBEF /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AB42002B13E0000DBEF /* xml.c */; };
+		11110AD92002B1410000DBEF /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AB62002B13E0000DBEF /* references.c */; };
+		11110ADA2002B1410000DBEF /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AB72002B13E0000DBEF /* cmark.c */; };
+		11110ADC2002B1410000DBEF /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110ABA2002B13E0000DBEF /* houdini_href_e.c */; };
+		11110ADD2002B1410000DBEF /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110ABC2002B13F0000DBEF /* latex.c */; };
+		11110ADF2002B1410000DBEF /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110ABF2002B13F0000DBEF /* render.c */; };
+		11110AE02002B1410000DBEF /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AC12002B13F0000DBEF /* inlines.c */; };
+		11110AE12002B1410000DBEF /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AC22002B13F0000DBEF /* node.c */; };
+		11110AE42002B1410000DBEF /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AC72002B1400000DBEF /* cmark_ctype.c */; };
+		11110AE52002B1410000DBEF /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AC82002B1400000DBEF /* houdini_html_e.c */; };
+		11110AE62002B1410000DBEF /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110AC92002B1400000DBEF /* iterator.c */; };
+		11110AE72002B1410000DBEF /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110ACA2002B1400000DBEF /* man.c */; };
+		11110AE82002B1410000DBEF /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = 11110ACB2002B1400000DBEF /* houdini_html_u.c */; };
+		11110AED2002B4560000DBEF /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AB92002B13E0000DBEF /* buffer.h */; };
+		11110AEE2002B4560000DBEF /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AEA2002B2650000DBEF /* cmark_export.h */; };
+		11110AEF2002B4560000DBEF /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AEB2002B2F90000DBEF /* cmark_version.h */; };
+		11110AF02002B4560000DBEF /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AAE2002B13D0000DBEF /* houdini.h */; };
+		11110AF12002B4560000DBEF /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110ABB2002B13F0000DBEF /* inlines.h */; };
+		11110AF22002B4560000DBEF /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AB52002B13E0000DBEF /* iterator.h */; };
+		11110AF32002B4560000DBEF /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110ACD2002B1400000DBEF /* node.h */; };
+		11110AF42002B4560000DBEF /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AAF2002B13E0000DBEF /* parser.h */; };
+		11110AF52002B4560000DBEF /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AA72002B13D0000DBEF /* references.h */; };
+		11110AF62002B4560000DBEF /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110ABE2002B13F0000DBEF /* render.h */; };
+		11110AF72002B4560000DBEF /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AC02002B13F0000DBEF /* scanners.h */; };
+		11110AF82002B4560000DBEF /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110ACE2002B1410000DBEF /* utf8.h */; };
+		11110AF92002B46C0000DBEF /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AC32002B13F0000DBEF /* cmark.h */; };
+		11110AFA2002B4820000DBEF /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AAC2002B13D0000DBEF /* cmark_ctype.h */; };
+		11110AFB2002B4A00000DBEF /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AC62002B1400000DBEF /* chunk.h */; };
+		11110AFC2002B4A00000DBEF /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AB32002B13E0000DBEF /* config.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +58,42 @@
 		111109772002AEFC0000DBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1111097A2002AEFC0000DBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1111097C2002AEFC0000DBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11110AA72002B13D0000DBEF /* references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = references.h; sourceTree = "<group>"; };
+		11110AA92002B13D0000DBEF /* commonmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commonmark.c; sourceTree = "<group>"; };
+		11110AAA2002B13D0000DBEF /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8.c; sourceTree = "<group>"; };
+		11110AAB2002B13D0000DBEF /* blocks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blocks.c; sourceTree = "<group>"; };
+		11110AAC2002B13D0000DBEF /* cmark_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark_ctype.h; sourceTree = "<group>"; };
+		11110AAE2002B13D0000DBEF /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
+		11110AAF2002B13E0000DBEF /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		11110AB02002B13E0000DBEF /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
+		11110AB12002B13E0000DBEF /* scanners.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scanners.c; sourceTree = "<group>"; };
+		11110AB22002B13E0000DBEF /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		11110AB32002B13E0000DBEF /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		11110AB42002B13E0000DBEF /* xml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
+		11110AB52002B13E0000DBEF /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		11110AB62002B13E0000DBEF /* references.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = references.c; sourceTree = "<group>"; };
+		11110AB72002B13E0000DBEF /* cmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmark.c; sourceTree = "<group>"; };
+		11110AB92002B13E0000DBEF /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		11110ABA2002B13E0000DBEF /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
+		11110ABB2002B13F0000DBEF /* inlines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inlines.h; sourceTree = "<group>"; };
+		11110ABC2002B13F0000DBEF /* latex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = latex.c; sourceTree = "<group>"; };
+		11110ABE2002B13F0000DBEF /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+		11110ABF2002B13F0000DBEF /* render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = render.c; sourceTree = "<group>"; };
+		11110AC02002B13F0000DBEF /* scanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanners.h; sourceTree = "<group>"; };
+		11110AC12002B13F0000DBEF /* inlines.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inlines.c; sourceTree = "<group>"; };
+		11110AC22002B13F0000DBEF /* node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
+		11110AC32002B13F0000DBEF /* cmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark.h; sourceTree = "<group>"; };
+		11110AC62002B1400000DBEF /* chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
+		11110AC72002B1400000DBEF /* cmark_ctype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmark_ctype.c; sourceTree = "<group>"; };
+		11110AC82002B1400000DBEF /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
+		11110AC92002B1400000DBEF /* iterator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iterator.c; sourceTree = "<group>"; };
+		11110ACA2002B1400000DBEF /* man.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = man.c; sourceTree = "<group>"; };
+		11110ACB2002B1400000DBEF /* houdini_html_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_u.c; sourceTree = "<group>"; };
+		11110ACD2002B1400000DBEF /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		11110ACE2002B1410000DBEF /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		11110AEA2002B2650000DBEF /* cmark_export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark_export.h; sourceTree = "<group>"; };
+		11110AEB2002B2F90000DBEF /* cmark_version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark_version.h; sourceTree = "<group>"; };
+		11110B082002BE090000DBEF /* SnappyMarkdown-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnappyMarkdown-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +126,8 @@
 		1111096F2002AEFC0000DBEF /* SnappyMarkdown */ = {
 			isa = PBXGroup;
 			children = (
+				11110B082002BE090000DBEF /* SnappyMarkdown-Bridging-Header.h */,
+				111109822002B00A0000DBEF /* cmark */,
 				111109702002AEFC0000DBEF /* AppDelegate.swift */,
 				111109722002AEFC0000DBEF /* ViewController.swift */,
 				111109742002AEFC0000DBEF /* Main.storyboard */,
@@ -64,7 +138,75 @@
 			path = SnappyMarkdown;
 			sourceTree = "<group>";
 		};
+		111109822002B00A0000DBEF /* cmark */ = {
+			isa = PBXGroup;
+			children = (
+				11110AAB2002B13D0000DBEF /* blocks.c */,
+				11110AB22002B13E0000DBEF /* buffer.c */,
+				11110AB92002B13E0000DBEF /* buffer.h */,
+				11110AC62002B1400000DBEF /* chunk.h */,
+				11110AC72002B1400000DBEF /* cmark_ctype.c */,
+				11110AAC2002B13D0000DBEF /* cmark_ctype.h */,
+				11110AEA2002B2650000DBEF /* cmark_export.h */,
+				11110AEB2002B2F90000DBEF /* cmark_version.h */,
+				11110AB72002B13E0000DBEF /* cmark.c */,
+				11110AC32002B13F0000DBEF /* cmark.h */,
+				11110AA92002B13D0000DBEF /* commonmark.c */,
+				11110AB32002B13E0000DBEF /* config.h */,
+				11110ABA2002B13E0000DBEF /* houdini_href_e.c */,
+				11110AC82002B1400000DBEF /* houdini_html_e.c */,
+				11110ACB2002B1400000DBEF /* houdini_html_u.c */,
+				11110AAE2002B13D0000DBEF /* houdini.h */,
+				11110AB02002B13E0000DBEF /* html.c */,
+				11110AC12002B13F0000DBEF /* inlines.c */,
+				11110ABB2002B13F0000DBEF /* inlines.h */,
+				11110AC92002B1400000DBEF /* iterator.c */,
+				11110AB52002B13E0000DBEF /* iterator.h */,
+				11110ABC2002B13F0000DBEF /* latex.c */,
+				11110ACA2002B1400000DBEF /* man.c */,
+				11110AC22002B13F0000DBEF /* node.c */,
+				11110ACD2002B1400000DBEF /* node.h */,
+				11110AAF2002B13E0000DBEF /* parser.h */,
+				11110AB62002B13E0000DBEF /* references.c */,
+				11110AA72002B13D0000DBEF /* references.h */,
+				11110ABF2002B13F0000DBEF /* render.c */,
+				11110ABE2002B13F0000DBEF /* render.h */,
+				11110AB12002B13E0000DBEF /* scanners.c */,
+				11110AC02002B13F0000DBEF /* scanners.h */,
+				11110AAA2002B13D0000DBEF /* utf8.c */,
+				11110ACE2002B1410000DBEF /* utf8.h */,
+				11110AB42002B13E0000DBEF /* xml.c */,
+			);
+			path = cmark;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11110AEC2002B4400000DBEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11110AFB2002B4A00000DBEF /* chunk.h in Headers */,
+				11110AFC2002B4A00000DBEF /* config.h in Headers */,
+				11110AF32002B4560000DBEF /* node.h in Headers */,
+				11110AF92002B46C0000DBEF /* cmark.h in Headers */,
+				11110AF02002B4560000DBEF /* houdini.h in Headers */,
+				11110AFA2002B4820000DBEF /* cmark_ctype.h in Headers */,
+				11110AF22002B4560000DBEF /* iterator.h in Headers */,
+				11110AED2002B4560000DBEF /* buffer.h in Headers */,
+				11110AEE2002B4560000DBEF /* cmark_export.h in Headers */,
+				11110AEF2002B4560000DBEF /* cmark_version.h in Headers */,
+				11110AF12002B4560000DBEF /* inlines.h in Headers */,
+				11110AF42002B4560000DBEF /* parser.h in Headers */,
+				11110AF52002B4560000DBEF /* references.h in Headers */,
+				11110AF62002B4560000DBEF /* render.h in Headers */,
+				11110AF72002B4560000DBEF /* scanners.h in Headers */,
+				11110AF82002B4560000DBEF /* utf8.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1111096C2002AEFC0000DBEF /* SnappyMarkdown */ = {
@@ -74,6 +216,7 @@
 				111109692002AEFC0000DBEF /* Sources */,
 				1111096A2002AEFC0000DBEF /* Frameworks */,
 				1111096B2002AEFC0000DBEF /* Resources */,
+				11110AEC2002B4400000DBEF /* Headers */,
 			);
 			buildRules = (
 			);
@@ -96,6 +239,7 @@
 				TargetAttributes = {
 					1111096C2002AEFC0000DBEF = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1111097B2002AEFC0000DBEF /* LaunchScreen.storyboard in Resources */,
+				11110AD72002B1410000DBEF /* config.h in Resources */,
 				111109782002AEFC0000DBEF /* Assets.xcassets in Resources */,
 				111109762002AEFC0000DBEF /* Main.storyboard in Resources */,
 			);
@@ -136,7 +281,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11110AE72002B1410000DBEF /* man.c in Sources */,
+				11110AD52002B1410000DBEF /* scanners.c in Sources */,
+				11110AE62002B1410000DBEF /* iterator.c in Sources */,
+				11110AE52002B1410000DBEF /* houdini_html_e.c in Sources */,
+				11110AD42002B1410000DBEF /* html.c in Sources */,
+				11110AD12002B1410000DBEF /* utf8.c in Sources */,
 				111109732002AEFC0000DBEF /* ViewController.swift in Sources */,
+				11110AD62002B1410000DBEF /* buffer.c in Sources */,
+				11110AD82002B1410000DBEF /* xml.c in Sources */,
+				11110ADD2002B1410000DBEF /* latex.c in Sources */,
+				11110ADC2002B1410000DBEF /* houdini_href_e.c in Sources */,
+				11110ADA2002B1410000DBEF /* cmark.c in Sources */,
+				11110AD92002B1410000DBEF /* references.c in Sources */,
+				11110AE82002B1410000DBEF /* houdini_html_u.c in Sources */,
+				11110AD02002B1410000DBEF /* commonmark.c in Sources */,
+				11110AD22002B1410000DBEF /* blocks.c in Sources */,
+				11110AE12002B1410000DBEF /* node.c in Sources */,
+				11110AE42002B1410000DBEF /* cmark_ctype.c in Sources */,
+				11110AE02002B1410000DBEF /* inlines.c in Sources */,
+				11110ADF2002B1410000DBEF /* render.c in Sources */,
 				111109712002AEFC0000DBEF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +380,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -265,6 +430,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -274,12 +440,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LB83DKTVND;
 				INFOPLIST_FILE = SnappyMarkdown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ragon.github.SnappyMarkdown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnappyMarkdown/SnappyMarkdown-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +459,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LB83DKTVND;
 				INFOPLIST_FILE = SnappyMarkdown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ragon.github.SnappyMarkdown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SnappyMarkdown/SnappyMarkdown-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
