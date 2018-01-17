@@ -49,6 +49,7 @@
 		11110AFB2002B4A00000DBEF /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AC62002B1400000DBEF /* chunk.h */; };
 		11110AFC2002B4A00000DBEF /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AB32002B13E0000DBEF /* config.h */; };
 		11135D88200E870F0063B538 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11135D87200E870F0063B538 /* Node.swift */; };
+		11135D8A200E87200063B538 /* NodeAST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11135D89200E87200063B538 /* NodeAST.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		11110AEB2002B2F90000DBEF /* cmark_version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark_version.h; sourceTree = "<group>"; };
 		11110B082002BE090000DBEF /* SnappyMarkdown-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnappyMarkdown-Bridging-Header.h"; sourceTree = "<group>"; };
 		11135D87200E870F0063B538 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		11135D89200E87200063B538 /* NodeAST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeAST.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				111109702002AEFC0000DBEF /* AppDelegate.swift */,
 				111109722002AEFC0000DBEF /* ViewController.swift */,
 				11135D87200E870F0063B538 /* Node.swift */,
+				11135D89200E87200063B538 /* NodeAST.swift */,
 				111109742002AEFC0000DBEF /* Main.storyboard */,
 				111109772002AEFC0000DBEF /* Assets.xcassets */,
 				111109792002AEFC0000DBEF /* LaunchScreen.storyboard */,
@@ -298,6 +301,7 @@
 				11110ADC2002B1410000DBEF /* houdini_href_e.c in Sources */,
 				11110ADA2002B1410000DBEF /* cmark.c in Sources */,
 				11110AD92002B1410000DBEF /* references.c in Sources */,
+				11135D8A200E87200063B538 /* NodeAST.swift in Sources */,
 				11110AE82002B1410000DBEF /* houdini_html_u.c in Sources */,
 				11110AD02002B1410000DBEF /* commonmark.c in Sources */,
 				11110AD22002B1410000DBEF /* blocks.c in Sources */,
