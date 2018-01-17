@@ -111,3 +111,11 @@ extension String {
         self.init(cString: cString)
     }
 }
+
+extension Node {
+    /// The abstract syntax tree representation of a Markdown document.
+    /// - returns: an array of block-level elements.
+    public var elements: [Block] {
+        return children.map(Block.init)
+    }
+}

@@ -9,17 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet private var resultLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let attributes = Attributes(fontSize: 16, bold: false, stylesheet: Stylesheet(fontFamily: "Helvetica"))
+        let testString = "**Hello world** Hello world"
+        let tree = Node(markdown: testString)!.elements
+        let result = tree[0].render(attributes)
+        resultLabel.attributedText = result
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
