@@ -48,6 +48,7 @@
 		11110AFA2002B4820000DBEF /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AAC2002B13D0000DBEF /* cmark_ctype.h */; };
 		11110AFB2002B4A00000DBEF /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AC62002B1400000DBEF /* chunk.h */; };
 		11110AFC2002B4A00000DBEF /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 11110AB32002B13E0000DBEF /* config.h */; };
+		11135D88200E870F0063B538 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11135D87200E870F0063B538 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		11110AEA2002B2650000DBEF /* cmark_export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark_export.h; sourceTree = "<group>"; };
 		11110AEB2002B2F90000DBEF /* cmark_version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmark_version.h; sourceTree = "<group>"; };
 		11110B082002BE090000DBEF /* SnappyMarkdown-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnappyMarkdown-Bridging-Header.h"; sourceTree = "<group>"; };
+		11135D87200E870F0063B538 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				111109822002B00A0000DBEF /* cmark */,
 				111109702002AEFC0000DBEF /* AppDelegate.swift */,
 				111109722002AEFC0000DBEF /* ViewController.swift */,
+				11135D87200E870F0063B538 /* Node.swift */,
 				111109742002AEFC0000DBEF /* Main.storyboard */,
 				111109772002AEFC0000DBEF /* Assets.xcassets */,
 				111109792002AEFC0000DBEF /* LaunchScreen.storyboard */,
@@ -284,6 +287,7 @@
 				11110AE72002B1410000DBEF /* man.c in Sources */,
 				11110AD52002B1410000DBEF /* scanners.c in Sources */,
 				11110AE62002B1410000DBEF /* iterator.c in Sources */,
+				11135D88200E870F0063B538 /* Node.swift in Sources */,
 				11110AE52002B1410000DBEF /* houdini_html_e.c in Sources */,
 				11110AD42002B1410000DBEF /* html.c in Sources */,
 				11110AD12002B1410000DBEF /* utf8.c in Sources */,
