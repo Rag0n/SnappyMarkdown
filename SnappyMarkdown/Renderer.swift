@@ -57,6 +57,10 @@ extension Inline {
         case let .strong(children):
             newAttributes.strong()
             return children.map { $0.render(newAttributes) }.joined()
+        case .lineBreak:
+            return NSAttributedString(string: "\n")
+        case .softBreak:
+            return NSAttributedString(string: "\n")
         default:
             fatalError("not implemented")
         }
