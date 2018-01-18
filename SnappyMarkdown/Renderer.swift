@@ -14,8 +14,10 @@ extension NSAttributedString {
         let baseFontDescriptor = UIFontDescriptor(name: attributes.stylesheet.fontFamily, size: attributes.fontSize)
         var fontTraits = UIFontDescriptorSymbolicTraits()
         if attributes.bold {
-            let boldFontTrait = UIFontDescriptorSymbolicTraits.traitBold
-            fontTraits.formUnion(boldFontTrait)
+            fontTraits.formUnion(.traitBold)
+        }
+        if attributes.italic {
+            fontTraits.formUnion(.traitItalic)
         }
         let fontDescriptor = baseFontDescriptor.withSymbolicTraits(fontTraits)!
         let font = UIFont(descriptor: fontDescriptor, size: 0)
@@ -30,10 +32,15 @@ struct Stylesheet {
 struct Attributes {
     var fontSize: CGFloat
     var bold: Bool
+    var italic: Bool
     let stylesheet: Stylesheet
 
     mutating func strong() {
         bold = true
+    }
+
+    mutating func emphasis() {
+        italic = true
     }
 }
 
@@ -61,6 +68,9 @@ extension Inline {
             return NSAttributedString(string: "\n")
         case .softBreak:
             return NSAttributedString(string: "\n")
+        case let .emphasis(children):
+            newAttributes.emphasis()
+            return children.map { $0.render(newAttributes) }.joined()
         default:
             fatalError("not implemented")
         }
@@ -68,9 +78,11 @@ extension Inline {
 }
 
 extension Array where Element == NSAttributedString {
-    func joined() -> NSAttributedString {
-        let r = NSMutableAttributedString()
-        for s in self {
+    func joined(separator: String = "") -> NSAttributedString {
+        guard !isEmpty else { return NSAttributedString(string: "") }
+        let r = self[0].mutableCopy() as! NSMutableAttributedString
+        for s in suffix(from: 1) {
+            r.append(NSAttributedString(string: separator))
             r.append(s)
         }
         return r

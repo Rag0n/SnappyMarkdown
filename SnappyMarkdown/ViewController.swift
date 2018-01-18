@@ -12,10 +12,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         stackView.addArrangedSubview(editor)
-        let attributes = Attributes(fontSize: 16, bold: false, stylesheet: Stylesheet(fontFamily: "Helvetica"))
-        let testString = "**Hello world** Hello world"
+        let attributes = Attributes(fontSize: 16, bold: false, italic: false, stylesheet: Stylesheet(fontFamily: "Helvetica"))
+        let testString = """
+        **Hello world** Hello world\n Test test
+        *another test*
+        ***emphasis* in bold**
+
+        second test
+        """
         let tree = Node(markdown: testString)!.elements
-        let result = tree[0].render(attributes)
+        let result = tree.map{ $0.render(attributes) }.joined(separator: "\n\n")
         resultLabel.attributedText = result
     }
 
