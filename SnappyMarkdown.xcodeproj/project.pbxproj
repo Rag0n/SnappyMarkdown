@@ -51,6 +51,7 @@
 		11135D88200E870F0063B538 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11135D87200E870F0063B538 /* Node.swift */; };
 		11135D8A200E87200063B538 /* NodeAST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11135D89200E87200063B538 /* NodeAST.swift */; };
 		11A3F457200FBE81002825BF /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3F456200FBE81002825BF /* Renderer.swift */; };
+		11A3F459200FE812002825BF /* MarkdownTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A3F458200FE812002825BF /* MarkdownTextStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		11135D87200E870F0063B538 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		11135D89200E87200063B538 /* NodeAST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeAST.swift; sourceTree = "<group>"; };
 		11A3F456200FBE81002825BF /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		11A3F458200FE812002825BF /* MarkdownTextStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTextStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				11135D87200E870F0063B538 /* Node.swift */,
 				11135D89200E87200063B538 /* NodeAST.swift */,
 				11A3F456200FBE81002825BF /* Renderer.swift */,
+				11A3F458200FE812002825BF /* MarkdownTextStorage.swift */,
 				111109742002AEFC0000DBEF /* Main.storyboard */,
 				111109772002AEFC0000DBEF /* Assets.xcassets */,
 				111109792002AEFC0000DBEF /* LaunchScreen.storyboard */,
@@ -299,6 +302,7 @@
 				11110AD12002B1410000DBEF /* utf8.c in Sources */,
 				111109732002AEFC0000DBEF /* ViewController.swift in Sources */,
 				11110AD62002B1410000DBEF /* buffer.c in Sources */,
+				11A3F459200FE812002825BF /* MarkdownTextStorage.swift in Sources */,
 				11110AD82002B1410000DBEF /* xml.c in Sources */,
 				11110ADD2002B1410000DBEF /* latex.c in Sources */,
 				11110ADC2002B1410000DBEF /* houdini_href_e.c in Sources */,
