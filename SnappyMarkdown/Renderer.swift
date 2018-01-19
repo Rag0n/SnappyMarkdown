@@ -49,6 +49,8 @@ extension Block {
         switch self {
         case let .paragraph(elements):
             return elements.map { $0.render(attributes) }.joined()
+        case .thematicBreak:
+            return NSAttributedString(string: "\n")
         default:
             fatalError("not implemented")
         }
